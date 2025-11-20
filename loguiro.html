@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Menú - Yazmín Fuentes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe4ef, #ffd6e8, #ffbfd9);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      width: 90%;
+      max-width: 450px;
+      padding: 28px;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      animation: zoomIn 0.9s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    img.logo {
+      width: 180px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+      filter: none;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #d81b60;
+      font-weight: 600;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #f8c1d9, #f5a8c8);
+      color: #7a1448;
+      padding: 16px;
+      margin: 12px 0;
+      text-decoration: none;
+      border-radius: 18px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 2px solid #f3a6c7;
+      
+      background-size: cover;
+      
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/YtcwsdC.gif" alt="Logo" class="logo" />
+    <h1>Bienvenidos</h1>
+    <a class="btn" href="https://wa.me/573212051397" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://www.instagram.com/yazminfuentes52" target="_blank">Instagram</a>
+  </div>
+</body>
+</html>
